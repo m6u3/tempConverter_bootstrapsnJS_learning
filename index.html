@@ -7,19 +7,22 @@
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-        <h1>
+<body id="body1" class="bg-warning bg-gradient" style="--bs-bg-opacity: .25;">
+    <div class="container text-center">
+        <h1 class="text-uppercase" style="color: rgb(31, 150, 187)">
         Temperature Converter!
      </h1>
     </div>
-    <div class="container" id="input-result">
+    <div class="container text-center text-success" id="input-result">
         <small>
             Please Enter Temperature:
         </small>
         <input type="text" name="Enter Here" id="temp" placeholder="Enter Here...">
         <br>
+        <br>
         <button type="button" class="btn btn-primary" onclick="fahToCel()">Convert to Celsius</button>
+        <br>
+        <br>
         <button type="button" class="btn btn-info" onclick="celToFah()">Convert to Fahrenheit</button>
     </div>
     
